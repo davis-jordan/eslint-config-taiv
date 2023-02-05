@@ -43,6 +43,7 @@ module.exports = {
   },
   plugins: [
     'import',
+    'jest',
     'typescript'
   ],
   env: {
