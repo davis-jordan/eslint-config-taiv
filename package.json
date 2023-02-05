@@ -1,6 +1,6 @@
 {
   "name": "@davis-jordan/eslint-config-taiv",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,14 +16,23 @@
   },
   "homepage": "https://github.com/davis-jordan/eslint-config-taiv#readme",
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint-config-rallycoding": "^3.2.0",
     "eslint-plugin-jest": "^24.0.2",
-    "eslint-plugin-react": "^7.21.2",
-    "eslint-plugin-typescript": "^0.14.0",
-    "babel-eslint": "^10.1.0"
+    "eslint-plugin-typescript": "^0.14.0"
   },
   "peerDependencies": {
     "eslint": ">= 3"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "eslint": "^8.33.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "typescript": "^4.9.5"
+  }
 }
