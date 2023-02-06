@@ -1,24 +1,24 @@
 module.exports = {
-  env: {
-    es2021: true
-  },
   extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript'
+    'xo-space',
+    "xo-react/space"
   ],
-  overrides: [
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
-  plugins: [
-    'react',
-    'jest',
-  ],
+  plugins: ['jest'],
   rules: {
+    "object-curly-spacing": ['error', "always"],
   },
-  parser: 'babel-eslint'
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      extends: [
+        'xo-typescript/space',
+        "xo-react/space"
+      ],
+      rules: {
+        "@typescript-eslint/object-curly-spacing": ['error', "always"],
+      }
+    }
+  ],
 }
 
 // module.exports = {
