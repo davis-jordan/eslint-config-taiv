@@ -1,6 +1,5 @@
 module.exports = {
   env: {
-    browser: true,
     es2021: true
   },
   extends: [
@@ -14,10 +13,12 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    'react',
+    'jest',
   ],
   rules: {
-  }
+  },
+  parser: 'babel-eslint'
 }
 
 // module.exports = {
