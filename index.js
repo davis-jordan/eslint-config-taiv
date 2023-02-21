@@ -1,21 +1,24 @@
 module.exports = {
   extends: [
     'xo-space',
-    "xo-react/space"
+    'xo-react/space'
   ],
   plugins: ['jest'],
   rules: {
-    "object-curly-spacing": ['error', "always"],
+    'react/prop-types': 0,
+    'arrow-parens': ['error', 'always'],
+    'brace-style': ['error', 'stroustrup'],
+    'object-curly-spacing': ['error', 'always'],
   },
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
         'xo-typescript/space',
-        "xo-react/space"
+        'xo-react/space'
       ],
       rules: {
-        "@typescript-eslint/object-curly-spacing": ['error', "always"],
+        '@typescript-eslint/object-curly-spacing': ['error', 'always'],
       }
     }
   ],
